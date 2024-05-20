@@ -25,7 +25,7 @@ public class ServicioAutenticacion {
     }
 
     public Usuario encontrarUsuario(String correo){
-        Usuario usuario = repositorio.findOneByCorreo(correo).orElseThrow(() -> new UsernameNotFoundException("El correo "+correo+" no corresponde a ningun usuario."));
+        Usuario usuario = repositorio.findOneByCorreo(correo).orElse(null);
         return usuario;
     }
 

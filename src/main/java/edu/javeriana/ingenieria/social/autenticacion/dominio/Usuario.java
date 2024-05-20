@@ -9,7 +9,7 @@ import lombok.Setter;
 
 @Entity
 @Getter
-@Settergit
+@Setter
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
